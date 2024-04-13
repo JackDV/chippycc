@@ -21,7 +21,7 @@ html {
   body {
       font-family: "Inter",Tahoma,Verdana,Segoe,sans-serif; 
       background: #2E3440;
-      color: #EBCB8B;
+      color: #BF616A;
       padding-bottom: 28px;
   }
   .bg-cloud{
@@ -75,25 +75,25 @@ html {
   
   */
   ::-webkit-scrollbar {
-    width: 12px;
+    width: 18px;
   }
   ::-webkit-scrollbar-button:end:increment,::-webkit-scrollbar-button:start:decrement {
-      display: block
+      display: block;
   }
   ::-webkit-scrollbar-button:vertical:end:decrement,::-webkit-scrollbar-button:vertical:start:increment {
-      display: none
+      display: none;
   }
-  ::-webkit-scrollbar-button:vertical:increment {
+  /*::-webkit-scrollbar-button:vertical:increment {
       width: 18px;
-      background: silver url(combo.png) no-repeat 50%;
+      background: #D8DEE9 url(combo.png) no-repeat 50%;
       height: 18px;
       margin: 1px 1px 1px 10px;
       -webkit-transform: rotateX(-90deg);
       transform: rotateX(-90deg);
       -webkit-transform: rotateY(-90deg);
       transform: rotateY(-90deg);
-      border: 1px outset #fff;
-      border-shadow: 1px 1px #000;
+      border: 1px;
+      border-radius: 5px;
   }
   ::-webkit-scrollbar-button:vertical:decrement {
       width: 11px;
@@ -105,20 +105,23 @@ html {
       border: 1px outset #fff;
       border-shadow: 1px 1px #000
   }
+  */
   ::-webkit-scrollbar-track{
-      background-image: url(background.bmp)
+      box-shadow: inset 0 0 12px 12px #81A1C1;
+      border: solid 5px transparent;
+      border-radius: 10px !important;
   }
   ::-webkit-scrollbar-thumb:vertical {
-      border: 1px outset #fff;
-      border-shadow: 1px 1px #000;
-      height: 40px;
-      background-color: silver
+     box-shadow: inset 0 0 12px 12px #ECEFF4;
+     border: solid 5px transparent;
+     border-radius: 10px !important;
+     height: 40px;
   }
   ::-webkit-scrollbar-corner:vertical {
-      background-color: #000
+      background-color: #000;
   }
   :-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment {
-      display: block
+      display: block;
   }
   ::-webkit-scrollbar-button:horizontal:end:decrement,::-webkit-scrollbar-button:horizontal:start:increment {
       display: none
@@ -158,34 +161,31 @@ html {
   
   */
   .btn{
-      border-width: 2px;
-      border-style: outset;
-      border-color: buttonface;
-      border-color: #D8DEE9;
-      background: #8FBCBB;
+      border-width: 1px;
+      border-color: #2E3440;
+      background: #81A1C1;
       color: #2E3440;
       padding: 0 0 4px;
       border-radius: 4px;
   }
   .btn:hover {
-      border: 2px inset #fff;
-      background: #81A1C1;
+      border-width: 1px;
+      border-color: #2E3440;
+      background: #88C0D0;
       color: #2E3440;
-      box-shadow: -1px -1px #000;
   }
   .btn:focus {
-      border: 2px inset #fff !important;
-      background: silver;
+    border-width: 1px;
+    border-color: #2E3440;
       color: #2E3440;
-      box-shadow: -1px -1px #000 !important;
-      outline: 0 !important;
-      background: url(background.bmp);
+      background: #88C0D0;
+      /*background: url(background.bmp);*/
   }
   .btn:active {
-      border: 2px inset #fff !important;
-      color: #2E3440;
-      box-shadow: -1px -1px #000 !important;
-      outline: 0 !important;
+    border-width: 1px;
+    border-color: #2E3440;
+    color: #2E3440;
+    background: #88C0D0;
       /* background: url(background.bmp); */
   }
   
@@ -195,6 +195,7 @@ html {
   }
   button:focus{
       /* outline: 1px dotted; */
+      background: #88C0D0;
   }
   .btn.disabled,.btn:disabled{
       cursor: default;
@@ -213,26 +214,25 @@ html {
   
   */
   .card{
-      border: solid;
-      border-width: 2px;
-      border-color: #D8DEE9;
+
       background: #434C5E;
-      color:#88C0D0;
+      color:#EBCB8B;
       border-radius: 10px;
   }
   .card.square{
-      border-radius: 0px;
+      border-radius: 10px;
   }
   .card.square .card-header{
-      border-radius: 0px;
+      border-radius: 10px;
   }
   .card.w95 .card-header{
       background: #08216b;
+      border-radius: 10px;
       /* OR #000082 is better?*/
   }
   .card-header{
-      background:#8FBCBB;
-      color: #2E3440;
+      background:#3B4252;
+      color: #BF616A;
       display: block;
       white-space: nowrap;
       overflow: hidden;
@@ -240,9 +240,11 @@ html {
       padding-top: 2px;
       padding-bottom: 1px;
       text-align: left;
+      border-radius: 10px;
   }
   .card-header.icon{
       padding-left: 4px;
+      border-radius: 10px;
   }
   .header-inactive{
       background: gray !important;
@@ -284,12 +286,13 @@ html {
   */
   .navbar-95{
       
-      background: silver;
+      background: #3B4252;
       margin: 0;
-      border: 1px outset #fff;
       min-height: 40px;
       padding: 0 6px;
+      border-radius: 10px;
       color:#212529;
+      margin: 1%;
   }
   
   .navbar-brand{
@@ -621,4 +624,16 @@ html {
       padding: .75rem;
       vertical-align: top;
       border-top: 1px solid #c0c0c0;
+  }
+  a:link { 
+    text-decoration: none; 
+  } 
+  a:visited { 
+    text-decoration: none; 
+  } 
+  a:hover { 
+    text-decoration: none;
+  } 
+  a:active { 
+    text-decoration: none; 
   }
