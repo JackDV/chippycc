@@ -327,11 +327,11 @@ html {
   }
   .navbar-light .navbar-toggler.collapsed .navbar-toggler-icon {
       width: 32px;
-      background: url(icons/directory_closed_cool-5.png);
+      background: url(burger-menu.png);
   }
   .navbar-light .navbar-toggler .navbar-toggler-icon {
       width: 32px;
-      background: url(icons/directory_open_cool-5.png);
+      background: url(burger-menu.png);
   }
   .navbar-toggler{
       width: auto;
@@ -650,4 +650,18 @@ html {
   */
   img{
     border-radius: 5px;
+  }
+
+      /*
+  
+  MISC CUSTOM
+  
+  */
+  .board-section{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 300;
+  }
+  .board-modal-image{
+    margin-bottom: 20px;
   }
